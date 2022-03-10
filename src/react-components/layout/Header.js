@@ -14,7 +14,6 @@ export function Header({
   appLogo,
   showCloud,
   enableSpoke,
-  editorName,
   showDocsLink,
   docsUrl,
   showSourceLink,
@@ -39,7 +38,7 @@ export function Header({
             {enableSpoke && (
               <li>
                 <a href="/spoke">
-                  {isHmc ? <FormattedMessage id="header.spoke" defaultMessage="Spoke" /> : editorName}
+                  <FormattedMessage id="header.spoke" defaultMessage="Senen Editor" />
                 </a>
               </li>
             )}
@@ -113,7 +112,6 @@ Header.propTypes = {
   appLogo: PropTypes.string,
   showCloud: PropTypes.bool,
   enableSpoke: PropTypes.bool,
-  editorName: PropTypes.string,
   showDocsLink: PropTypes.bool,
   docsUrl: PropTypes.string,
   showSourceLink: PropTypes.bool,
